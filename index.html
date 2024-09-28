@@ -8,7 +8,7 @@
       <link rel="shortcut icon" href="assets/img/dezafinadoslogo.jpg" type="image/x-icon">
 
       <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
 
       <!--=============== SWIPER CSS ===============-->
       <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
@@ -16,126 +16,396 @@
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles.css">
 
-      <title>Os Dez Afinados - Produtos</title>
+      <title>Os Dez Afinados</title>
    </head>
    <body>
       <!--==================== HEADER ====================-->
       <header class="header" id="header">
          <nav class="nav container">
-            <a href="#" class="nav__logo">Produtos</a>
-
+            <a href="#" class="nav__logo">
+               <img src="assets/img/dezafinadoslogo.jpg" alt="image" class="nav__img-1">
+               <span>Os Dez Afinados</span>
+            </a>
+            
             <div class="nav__menu" id="nav-menu">
                <ul class="nav__list">
-                  <li class="nav__item">
-                     <a href="file:///C:/Users/Utilizador/OneDrive/Ambiente%20de%20Trabalho/Dezafinados%20Website/index.html" class="nav__link">Página Inicial</a>
+                  <li>
+                     <a href="#home" class="nav__link active-link">Inicio</a>
                   </li>
 
-                  <li class="nav__item">
-                     <a href="#" class="nav__link">Novidades</a>
+                  <li>
+                     <a href="#about" class="nav__link">Quem somos</a>
                   </li>
 
-                  <li class="nav__item">
-                     <a href="" class="nav__link">Contacte-nos</a>
+                  <li>
+                     <a href="#services" class="nav__link">Eventos</a>
+                  </li>
+
+                  <li>
+                     <a href="#projects" class="nav__link">Parcerias</a>
+                  </li>
+
+                  <li>
+                     <a href="file:///C:/Users/Utilizador/OneDrive/Ambiente%20de%20Trabalho/DezAfinados%20Website2/index.html#" class="nav__link">Produtos</a>
+                  </li>
+
+                  <li>
+                     <a href="#contact" class="nav__link button">Contacte-nos</a>
                   </li>
                </ul>
 
-               <!--Close button-->
+               <!-- Close button -->
                <div class="nav__close" id="nav-close">
-                  <i class="ri-close-line"></i>
+                  <i class="ri-close-large-line"></i>
                </div>
             </div>
 
-            <div class="nav__actions">
-               
-               <!-- Toggle button-->
-                <div class="nav__toggle" id="nav-toggle">
-                  <i class="ri-menu-line"></i>
-                </div>
-            </div>
+            <!-- Toggle menu-->
+             <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-apps-2-line"></i>
+             </div>
          </nav>
       </header>
 
       <!--==================== MAIN ====================-->
       <main class="main">
-         <!--==================== HOME ====================-->
-         <section class="home">
-            <div class="home__container container">
-               <div class="home__content">
-                  <div class="home__circle">
-                     <div class="home__subcircle"></div>
-                     <h1 class="home__title">Dez Afinados</h1>
-                  </div>
+         <!--==================== HOME / INICIO ====================-->
+         <section class="home section" id="home">
+            <img src="assets/img/dezafinadosmembros.jpg" alt="image" class="home__lines">
 
-                  <div class="home__swiper swiper">
-                     <div class="swiper-wrapper">
-                        <article class="home__article swiper-slide">
-                           <img src="assets/img/swp280_dkg.jpg" alt="image" class="home__img">
+            <div class="home__container container grid">
+               <div class="home__content grid">
+                  <div class="home__data">
+                     <h1 class="home__title">
+                        Grupo de Animação <br> de Rua <br> 
+                        Os Dez Afinados <br> 
+                     </h1>
 
-                           <h2 class="home__product">Sweats</h2>
-                           <h3 class="home__price">12 €</h3>
-                        </article>
+                     <div class="home__buttons">
+                        <a href="#services" class="button">Nossos serviços</a>
 
-                        <article class="home__article swiper-slide">
-                           <img src="assets/img/clothing-2.png" alt="image" class="home__img">
-
-                           <h2 class="home__product">Crachás</h2>
-                           <h3 class="home__price">15 €</h3>      
-                        </article>
-                        
-                        <article class="home__article swiper-slide">
-                           <img src="assets/img/green-baseball-cap-free-photo.jpg" alt="image" class="home__img">
-
-                           <h2 class="home__product">Chapéus</h2>
-                           <h3 class="home__price">5 €</h3>
-                        </article>
-
-                        <article class="home__article swiper-slide">
-                           <img src="assets/img/clothing-4.png" alt="image" class="home__img">
-
-                           <h2 class="home__product">Calças</h2>
-                           <h3 class="home__price">1 €</h3>
-                        </article>
-
-                        <article class="home__article swiper-slide">
-                           <img src="assets/img/clothing-5.png" alt="image" class="home__img">
-
-                           <h2 class="home__product">Camisolas</h2>
-                           <h3 class="home__price">5 €</h3>
-                        </article>
+                        <a href="#projects" class="button__link">
+                           <span>Ver Parcerias</span>
+                           <i class="ri-arrow-right-line"></i>
+                        </a>
                      </div>
                   </div>
-
-                  <!-- Navigation buttons -->
-                  <div class="swiper-button-prev">
-                     <i class="ri-arrow-left-line"></i>
-                  </div>
-                  <div class="swiper-button-next">
-                     <i class="ri-arrow-right-line"></i>
-                  </div>   
                </div>
+            </div>
+         </section>
 
-               <footer class="home__footer">
-                  <div class="home__languages">
-                     PT | EN
+         <!--==================== ABOUT / QUEM SOMOS ====================-->
+         <section class="about section" id="about">
+            <div class="about__container container grid">
+               <div class="about__data">
+                  <span class="section__subtitle">QUEM SOMOS</span>
+                  <h2 class="section__title">
+                     Somos os melhores <br> 
+                  </h2>
+
+                  <p class="about__description">
+                     Somos uma banda formada por vários músicos jovens
+                     de várias partes do concelho de Lisboa e Vila Franca de Xira
+                     com o objetivo e animar e dinamizar as pessoas à nossa volta.
+                  </p>
+
+                  <ul class="about__list grid">
+                     <li class="about__list-item">
+                        <span>Músicos profissionais</span>
+                     </li>
+
+                     <li class="about__list-item">
+     
+                        <span>Qualidade Garantida</span>
+                     </li>
+
+                     <li class="about__list-item">
+
+                        <span>Diversão Garantida</span>
+                     </li>
+
+                     <li class="about__list-item">
+                        <span>Charanga</span>
+                     </li>
+                  </ul>
+
+                  <a href="#projects" class="button">Ver Parcerias</a>
+               </div>
+         
+               <div class="about__images">
+                  <img src="assets/img/coleteencarnado.jpg" alt="image" class="about__img-1">
+                  <img src="assets/img/coleteencarnado 22.jpg" alt="image" class="about__img-2">
+               </div>
+            </div>
+         </section>
+
+         <!--==================== SERVICES / EVENTOS ====================-->
+         <section class="services section" id="services">
+            <div class="services__container container grid">
+               <div class="services__data">
+                  <div>
+                     <span class="section__subtitle">Eventos</span>
+                     <style>
+                        .section__subtitle{
+                           font-size: 25px;
+                        }
+                     </style>
+                     <h2 class="section__title">Próximos Eventos</h2>
+                     <img src="assets/img/bomsucesso.jpg" alt="vialonga" class="event__img">
+                     <style>
+                        .event__img{
+                           display: block;
+                           margin-left: auto;
+                           margin-right: auto;
+                           margin-top: 3rem;
+                        }
+                     </style>
                   </div>
-
-                  <div class="home__social">
-                     <a href="https://www.facebook.com/profile.php?id=100092246692566" target="_blank" class="home__social-link">
-                        <i class="ri-facebook-circle-line"></i>
-                     </a>
-
-                     <a href="https://www.instagram.com/os_dez_afinados/" target="_blank" class="home__social-link">
-                        <i class="ri-instagram-line"></i>
-                     </a>
-
-                     <a href="https://www.youtube.com/@OsDezAfinados" target="_blank" class="home__social-link">
-                        <i class="ri-youtube-line"></i>
-                     </a>
+               </div>
+                  <h2 class="section__title"> Eventos Anteriores</h2>
+                  <div class="youtube">
+                     <iframe width="560" height="315" src="https://www.youtube.com/embed/aUuJurVxhKI?si=dlP0S1dPKkMZ4mIR" 
+                     title="YouTube video player" frameborder="0" 
+                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                     referrerpolicy="strict-origin-when-cross-origin" 
+                     allowfullscreen></iframe>
                   </div>
-               </footer>
+                  <h2 class="section__title">Sigam o nosso canal!</h2>
+                  <a href="https://www.youtube.com/@OsDezAfinados">
+                     <img src="assets/img/dezafinadoslogo.jpg" alt="youtube_canal" class="youtube_canal">
+                     <style>
+                        .youtube_canal{
+                           width: 200px;
+                           margin: auto;
+                           margin-top: 0;
+                        }
+                     </style>
+                  </a>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== PROJECT / PARCERIAS ====================-->
+         <section class="projects section" id="projects">
+            <span class="section__subtitle">PARCERIAS</span>
+            <h2 class="section__title">As nossas parcerias</h2>
+
+            <div class="projects__container container grid">
+               <article class="projects__card">
+                  <a href="https://www.cm-vfxira.pt/" target="_blank" class="footer__social-link">
+                     <img src="assets/img/CMVFX-Cor.jpg" alt="" class="projects__img">
+                  </a>
+                  
+
+                  <div class="projects__data">
+                     <h2 class="projects__title">Câmara Municipal de Vila Franca de Xira</h2>
+                        <span class="projects__date">15 Julho de 2024</span>
+
+                        <p>
+                           A Câmara Municipal de Vila Franca de Xira é o órgão autárquico 
+                           deste concelho e tem por missão definir e 
+                           executar políticas tendo em vista a defesa dos interesses e s
+                           atisfação das necessidades da população local. Nesse sentido, 
+                           cabe-lhe promover o desenvolvimento
+                           do município em todas as áreas da vida, como a saúde, a educação,
+                           a acção social e habitação, 
+                           o ambiente e saneamento básico, o ordenamento do território e 
+                           urbanismo, os transportes e comunicações, 
+                           o abastecimento público, o desporto e cultura, a defesa do consumidor e a protecção civil.
+                        </p>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <a href="https://associativismo.cm-vfxira.pt/gremio-dramatico-povoense" target="_blank" class="footer__social-link">
+                     <img src="assets/img/gremio.logo.jpg" alt="" class="projects__img">
+                  </a>
+
+                  <div class="projects__data">
+                     <h2 class="projects__title">Grémio Dramático Povoense</h2>
+                        <span class="projects__date">21 de Maio 2023</span>
+
+                        <p>
+                           Fundado em 19 de Agosto de 1889, o Grupo Dramático Povoense, popularmente conhecido por "Grémio" é 
+                           hoje a Associação mais antiga da Freguesia da Póvoa de Santa Iria 
+                           e a segunda mais antiga do Município de Vila Franca de Xira.
+                        </p>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <a href="https://euterpealhandrense.pt/" target="_blank" class="footer__social-link">
+                     <img src="assets/img/euterpe.png" alt="" class="projects__img">
+                  </a>
+
+                  <div class="projects__data">
+                     <h2 class="projects__title">Euterpe Alhadrense</h2>
+                        <span class="projects__date">02 Novembro de 2022</span>
+
+                        <p>
+                           A Sociedade Euterpe Alhandrense, fundada em 1 de dezembro de 1862,
+                           é a Coletividade mais antiga do Concelho de Vila Franca de Xira.
+
+                           Fortemente enraizada junto da comunidade local, 
+                           foi com a Banda Filarmónica que percorreu a maior parte da sua história, 
+                           na década de 40 do século passado é inaugurada a Biblioteca que se assume num largo período da história como uma secção de grande atividade e projeção, 
+                           em 1971 é fundado o Grupo Coral e em 1974 o Grupo de Teatro “Esteiros” inicia os seus ensaios.
+                        </p>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <a href="https://www.facebook.com/bandabombeirospsi/?locale=pt_PT" target="_blank" class="footer__social-link">
+                     <img src="assets/img/bandapovoa.jpg" alt="" class="projects__img">
+                  </a>
+
+                  <div class="projects__data">
+                     <h2 class="projects__title">Banda dos Bombeiros Voluntários da Póvoa de Santa Iria</h2>
+                        <span class="projects__date">02 Novembro de 2022</span>
+
+                        <p>
+                           A Escola de Música deu os seus primeiros passos em 1988, 
+                           recrutando os seus alunos nas escolas das freguesias da Póvoa de Santa Iria e Forte da Casa.
+                        </p>
+                  </div>
+               </article>
+            </div>
+         </section>
+
+         <!--==================== CONTACT ====================-->
+         <section class="contact section" id="contact">
+            <div class="container">
+               <span class="section__subtitle">CONTACTE-NOS</span>
+               <h2 class="section__title">Ajude-nos a melhorar</h2>
+
+               <div class="contact__container grid">
+                  <img src="assets/img/dezafinadoslogo.jpg" alt="image" class="contact__img">
+
+                  <div class="contact__data grid">
+                     <div class="contact__card">
+                        <div class="contact__icon">
+                           <i class="ri-map-pin-2-line"></i>
+                        </div>
+
+                        <h3 class="contact__title">Morada</h3>
+                        <address class="contact__info">
+                           Lisboa - Póvoa de Santa Iria <br>
+                           Av. D. Vicente Afonso Valente, Quartel
+                        </address>
+                     </div>
+
+                     <div class="contact__card">
+                        <div class="contact__icon">
+                           <i class="ri-phone-line"></i>
+                        </div>
+
+                        <h3 class="contact__title">Fale connosco</h3>
+                        <!--<a href="#contact" class="nav__link">Contacte-nos</a>-->
+                        <address class="contact__info">
+                           +351 962 954 929 - Glória Rocha <br> Autor do projeto: Daniel Rocha <br> Site desenvolvido por: João Conduto
+                        </address>
+                     </div>
+
+                     <div class="contact__card">
+                        <div class="contact__icon">
+                           <i class="ri-message-3-line"></i>
+                        </div>
+
+                        <h3 class="contact__title">Vamos conversar</h3>
+
+                        <div class="contact__social">
+                           <a href="https://api.whatsapp.com/send?phone=51123456789&text=Hello, more information!" target="_blank" class="contact__social-link">
+                              <i class="ri-whatsapp-line"></i>
+                           </a>
+
+                           <a href="https://m.me/bedimcode" target="_blank" class="contact__social-link">
+                              <i class="ri-messenger-line"></i>
+                           </a>
+
+                           <a href="https://t.me/telegram" target="_blank" class="contact__social-link">
+                              <i class="ri-telegram-line"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
          </section>
       </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <div>
+               <a href="#" class="footer__logo">
+                  <span>Os Dez Afinados</span>
+               </a>
+
+               <p class="footer__description">Musicista/banda <br> Charanga</p>
+
+               <address class="footer_email">Email: osdezafinasdos@gmail.com</address>
+            </div>
+
+            <div class="footer__content grid">
+               <div>
+                  <h3 class="footer__title">Company</h3>
+
+                  <ul class="footer__links">
+                     <li>
+                        <a href="#about" class="footer__link">Sobre nós</a>
+                     </li>
+
+                     <li>
+                        <a href="#services" class="footer__link">Eventos</a>
+                     </li>
+
+                     <li>
+                        <a href="#projects" class="footer__link">Parcerias</a>
+                     </li>
+                  </ul>
+               </div>
+
+               <div>
+                  <h3 class="footer__title">Informação</h3>
+
+                  <ul class="footer__list">
+                     <li>
+                       <adress class="footer__info">Lisboa - Póvoa de Santa Iria <br>  Av. D. Vicente Afonso Valente, <br> Quartel</adress>
+                     </li>
+                  </ul> 
+                  
+               </div>
+
+               <div>
+                  <h3 class="footer__title">Redes Sociais</h3>
+
+                  <div class="footer__social">
+                     <a href="https://www.facebook.com/profile.php?id=100092246692566" target="_blank" class="footer__social-link">
+                        <i class="ri-facebook-circle-line"></i>
+                     </a>
+                     <a href="https://www.youtube.com/@OsDezAfinados/" target="_blank" class="footer__social-link">
+                        <i class="ri-youtube-fill"></i>
+                     </a>
+
+                     <a href="https://www.instagram.com/os_dez_afinados/" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                     </a>
+
+                     
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <span class="footer__copy">
+            &#169; All Rights Reserved By OsDezAfinados 2024
+         </span>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
 
       <!--=============== SCROLLREVEAL ===============-->
       <script src="assets/js/scrollreveal.min.js"></script>
